@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        color: #333333;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .result {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+      }
+
+      .msrp {
+        font-weight: bold;
+        color: #0c0505; /* Red color */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MSRP Prediction Result</h1>
+    <div class="result">
+      <p>The predicted MSRP for your car is: $<strong class="msrp">{{ '%.1f' % msrp }}</strong></p>
+    </div>
+  </body>
+</html>

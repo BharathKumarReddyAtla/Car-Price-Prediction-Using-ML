@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #333333;
+            font-weight: bold;
+        }
+
+        label span {
+            margin-left: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50; /* Green */
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        h2 {
+            color: #333333;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Price Predictor</h1>
+    <form action="/predict" method="POST">
+        <label for="make"><span>Make:</span></label>
+        <input type="text" id="make" name="make" required>
+
+        <label for="model"><span>Model:</span></label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="year"><span>Year:</span></label>
+        <input type="number" id="year" name="year" required>
+
+        <label for="engine_fuel_type"><span>Engine Fuel Type:</span></label>
+        <input type="text" id="engine_fuel_type" name="engine_fuel_type" required>
+
+        <label for="engine_hp"><span>Engine HP:</span></label>
+        <input type="number" id="engine_hp" name="engine_hp" required>
+
+        <label for="engine_cylinders"><span>Engine Cylinders:</span></label>
+        <input type="number" id="engine_cylinders" name="engine_cylinders" required>
+
+        <label for="transmission_type"><span>Transmission Type:</span></label>
+        <input type="text" id="transmission_type" name="transmission_type" required>
+
+        <label for="driven_wheels"><span>Driven Wheels:</span></label>
+        <input type="text" id="driven_wheels" name="driven_wheels" required>
+
+        <label for="number_of_doors"><span>Number of Doors:</span></label>
+        <input type="number" id="number_of_doors" name="number_of_doors" required>
+
+        <label for="market_category"><span>Market Category:</span></label>
+        <input type="text" id="market_category" name="market_category" required>
+
+        <label for="vehicle_size"><span>Vehicle Size:</span></label>
+        <input type="text" id="vehicle_size" name="vehicle_size" required>
+
+        <label for="vehicle_style"><span>Vehicle Style:</span></label>
+        <input type="text" id="vehicle_style" name="vehicle_style" required>
+
+        <label for="highway_mpg"><span>Highway MPG:</span></label>
+        <input type="number" id="highway_mpg" name="highway_mpg" required>
+
+        <label for="city_mpg"><span>City MPG:</span></label>
+        <input type="number" id="city_mpg" name="city_mpg" required>
+
+        <label for="popularity"><span>Popularity:</span></label>
+        <input type="number" id="popularity" name="popularity" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if prediction %}
+        <h2>{{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
