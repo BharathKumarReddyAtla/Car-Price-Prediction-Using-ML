@@ -17,21 +17,26 @@ Results
 
 EC2 instance created and running.
 
-![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/7a8ed0e7-bd9d-4320-951b-0a4be6e8be8b)
+![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/f58145ea-456d-4628-b334-ddccc1bc34d1)
+
 
 Uploaded zip file to S3 Bucket.
 
-![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/7b7d275a-d40a-45d7-bc88-76a508a4d9af)
+![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/f5537541-36e6-4544-9a76-096b13f67d05)
+
 
 Added inbound rule for port 8000 for browser access.
 
-![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/25ce1f1e-0a43-461d-b790-799f95aa28fc)
+![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/c078af8c-fd8d-4d91-b3d1-fb57f6fcbcde)
+
 
 Successfully running on Public IPv4 address 
 
-![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/f32259ff-6907-4c98-a89e-99933be01a5a)
+![image](https://github.com/BharathKumarReddyAtla/Car-Price-Prediction-Using-ML/assets/70533137/dd27c56a-5e65-4ed6-afd8-d42d75827d46)
 
 
 
-##Conclusion
+
+#Conclusion
+
 In this car price prediction project, we performed data cleaning and feature selection on the dataset. We trained and evaluated multiple machine learning models, ultimately selecting the best performing bagging Regressor model. To make the model accessible, we developed a user-friendly GUI using Flask and integrated it with a MySQL database for data storage. The project was deployed on AWS using FastAPI, ensuring scalability and reliability. Users can input car features and receive accurate price predictions through the web interface.
